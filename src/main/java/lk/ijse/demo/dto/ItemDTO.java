@@ -1,5 +1,10 @@
 package lk.ijse.demo.dto;
 
+/**
+ * @author Geeth Malinda
+ * Date: 8/07/2021
+ */
+
 public class ItemDTO {
 
     private String code;

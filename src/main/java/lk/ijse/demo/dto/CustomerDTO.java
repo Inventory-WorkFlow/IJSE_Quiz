@@ -2,6 +2,11 @@ package lk.ijse.demo.dto;
 
 
 
+/**
+ * @author Geeth Malinda
+ * Date: 8/07/2021
+ */
+
 public class CustomerDTO {
     private String id;
     private String name;

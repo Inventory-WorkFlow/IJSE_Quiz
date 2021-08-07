@@ -8,6 +8,11 @@ import java.util.List;
 
 @Entity
 @Table(name = "T_ITEM")
+
+/**
+ * @author Geeth Malinda
+ * Date: 8/07/2021
+ */
 public class Item {
 
     @Id
