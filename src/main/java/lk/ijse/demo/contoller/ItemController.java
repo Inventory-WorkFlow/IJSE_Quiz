@@ -1,10 +1,12 @@
 package lk.ijse.demo.contoller;
 
-import lk.ijse.demo.service.CustomerService;
+import lk.ijse.demo.dto.ItemDTO;
+import lk.ijse.demo.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 /**
  * @author Geeth Malinda
@@ -13,16 +15,16 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/customer")
-public class CustomerController {
+@RequestMapping("/item")
+
+public class ItemController {
 
     @Autowired
-    CustomerService customerService;
+    ItemService itemService;
 
     @PostMapping("/save")
-    @ResponseBody
-    public boolean saveCustomer(@RequestBody CustomerDTO customerDto) {
-        return customerService.saveCustomer(customerDto);
+    public boolean saveItem(@RequestBody ItemDTO itemDTO) {
+        return itemService.saveItem(itemDTO);
     }
 
 }

@@ -7,6 +7,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Geeth Malinda
+ * Date: 8/07/2021
+ */
+
 @Entity
 @Table(name = "T_CUSTOMER")
 public class Customer implements Serializable {
